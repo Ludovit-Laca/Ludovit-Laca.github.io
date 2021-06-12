@@ -2686,6 +2686,10 @@ input, select, textarea {
 		max-width: 54em;
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
+		animation: fadein 2s;
+		-moz-animation: fadein 2s; /* Firefox */
+		-webkit-animation: fadein 2s; /* Safari and Chrome */
+		-o-animation: fadein 2s; /* Opera */
 	}
 
 		#main > section {
@@ -3254,4 +3258,46 @@ input, select, textarea {
 		box-sizing: inherit;
 		padding: 8px 16px !important;
 		font-size: 10pt;
+	}
+
+/* Animations */ 
+
+	#fadeIn {
+		animation: fadein 2s;
+		-moz-animation: fadein 2s; /* Firefox */
+		-webkit-animation: fadein 2s; /* Safari and Chrome */
+		-o-animation: fadein 2s; /* Opera */
+	}
+
+	@keyframes fadein {
+		from {
+			opacity:0;
+		}
+		to {
+			opacity:1;
+		}
+	}
+	@-moz-keyframes fadein { /* Firefox */
+		from {
+			opacity:0;
+		}
+		to {
+			opacity:1;
+		}
+	}
+	@-webkit-keyframes fadein { /* Safari and Chrome */
+		from {
+			opacity:0;
+		}
+		to {
+			opacity:1;
+		}
+	}
+	@-o-keyframes fadein { /* Opera */
+		from {
+			opacity:0;
+		}
+		to {
+			opacity: 1;
+		}
 	}
