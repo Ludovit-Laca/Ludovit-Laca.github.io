@@ -1,2 +1,2 @@
 # Ludovit-Laca.github.io
-My ePortfolio
+My own ePortfolio
